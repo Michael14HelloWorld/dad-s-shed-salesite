@@ -11,6 +11,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+      a:link {text-decoration: none;}
+      a:visited {text-decoration: none;}
+      a:hover {text-decoration: none;}
+      
+      #footer {
+        position: relative;
+        margin-top: -180px;
+        /* negative value of footer height */
+        height: 180px;
+        clear: both;
+        background-color: red;
+      }
+
+    </style>
 
 </head>
 <body>
@@ -19,8 +36,16 @@
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
     <a href="#home" class="w3-bar-item w3-button"><b>Mini Barn</b> Shoppe</a>
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
+    <!-- Float links to the right. -->
+    <div class="w3-right">
+      <a href="barns.html" class="w3-bar-item w3-button w3-hide-small">Barns</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    <div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#projects" class="w3-bar-item w3-button">Barns</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
@@ -30,9 +55,9 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="welcome_img.jpg" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/57a8e0093e00be4bc051b319/1496253679987/VIEW+PHOTOS+OF+DELIVERY?format=1000w" alt="Architecture" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
-    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>miniBarn</b></span> <span class="w3-hide-small w3-text-light-grey">Shoppe</span></h1>
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>MiniBarn</b></span> <span class="w3-hide-small w3-text-light-grey">Shoppe</span></h1>
   </div>
 </header>
 
@@ -47,25 +72,25 @@
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Garage</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Garage</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56e9c65ab654f9155e86bda8/1461786765343/?format=300w" alt="House" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Utility</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Utility</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56e9c66bb654f9155e86be68/1461786299361/?format=300w" alt="House" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Lofted Barn</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Lofted Barn</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56e9c8b9cf80a17e42b51c15/1461786349727/?format=300w" alt="House" style="width:100%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Deluxe Lofted Barn Cabin</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Deluxe Lofted Barn Cabin</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56fe9c112fe1319568b2bfa4/1461786525469/?format=300w" alt="House" style="width:99%">
       </div>
     </div>
@@ -73,29 +98,28 @@
   <div class="w3-row-padding">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Painted Garage</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Painted Garage</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56e9cdbee707eb67d0bd46a0/1461786556915/?format=300w" alt="House" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Painted Utility</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Painted Utility</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56e9cdded210b80e07c6a3b8/1461786572733/?format=300w" alt="House" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Painted Lofted Barn</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Painted Lofted Barn</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56e9ce16c2ea516cf4d0b07d/1461786586195/?format=300w" alt="House" style="width:99%">
       </div>
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-display-container">
-        <div class="w3-display-topleft w3-black w3-padding">Painted Deluxe Lofted Barn Cabin</div>
+        <div class="w3-display-topleft w3-black w3-padding w3-round">Painted Deluxe Lofted Barn Cabin</div>
         <img src="https://static1.squarespace.com/static/56e6e6a545bf21569ca044d2/t/56fd903cf85082f5156c3518/1461786745731/?format=300w" alt="House" style="width:99%">
       </div>
     </div>
-    <a href="/barns.html" class="w3-btn w3-white w3-border w3-round-large">See More</a>
   </div>
     
 
@@ -114,73 +138,39 @@
     material warranty and a 5-year 100% labor and replacement warranty.
     </p>
   </div>
-
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-middle">
-      <img class="w3-round" src="dad.jpg" alt="John" style="width:100%">
-      <h3>Mike Groff</h3>
-      <p class="w3-opacity">Builder & Salesman</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block" data-toggle="modal" data-target="#myModal">Contact</button></p>
-    </div>
-    
-    <!--Modal-->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Contact</h4>
-            </div>
-            <div class="modal-body">
-              <p><b>Phone:</b> (941)-302-4423</p><br>
-              <p><b>Email:</b> mikecarpentry76@gmail.com</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-  <!-- Contact Section -->
-    
-  </div>
+        <footer class="w3-container w3-center w3-white w3-xlarge">
+              <div class="w3-center w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+                <h2 class="w3-wide w3-center"><img src="dad.jpg" class="img-circle" alt="Miriam Groff" width="300" height="325"></h2>
+                <div class="w3-row w3-padding-32">
+                    <i class="fa fa-map-marker" style="width:30px;"></i> Northern CO<br>
+                    <i class="fa fa-envelope w3-hover-text-blue" style="padding: 10px; font-size: 100%"></i><a href="mailto:mikecarpentry76@gmail.com">mikecarpentry76@gmail.com</a><br>
+                    <i class="fa fa-phone w3-hover-text-red" style="padding: 10px; font-size: 100%"></i><a href="tel:9413024423">(941)-302-4423</a>
+                  </div>
+              </div>
+        </footer>
+              <br><br><br><br><br><br><br><br>
   
 <!-- End page content -->
 </div>
+</div>
 
-<!-- Google Map -->
-<div id="googleMap" class="w3-grayscale" style="width:100%;height:450px;"></div>
 
 <!-- Footer -->
-<footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<footer class="w3-center w3-black w3-padding-16" style="padding-bottom:0" id="footer">
+  <br><br><br>
+  <p>Built by <a href="https://github.com/Michael14HelloWorld" target="_blank" class="w3-hover-text-green">Michael Groff</a> and <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-<!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
